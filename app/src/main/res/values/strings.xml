@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">com.mobileexam.tanduyan</string>
+
+    <!-- Character Names -->
     <string name="rick_sanchez">Rick Sanchez</string>
     <string name="morty_smith">Morty Smith</string>
     <string name="summer_smith">Summer Smith</string>
@@ -20,4 +22,38 @@
     <string name="antenna_morty">Antenna Morty</string>
     <string name="antenna_rick">Antenna Rick</string>
     <string name="ants_in_my_eyes_johnson">Ants in my Eyes Johnson</string>
+
+    <!-- Character Statuses -->
+    <string name="status_alive">Alive</string>
+    <string name="status_dead">Dead</string>
+    <string name="status_unknown">Unknown</string>
+
+    <!-- Character Species -->
+    <string name="species_human">Human</string>
+    <string name="species_alien">Alien</string>
+
+    <!-- Character Types -->
+    <string name="type_genetic_experiment">Genetic experiment</string>
+    <string name="type_superhuman_ghost_trains_summoner">Superhuman (Ghost trains summoner)</string>
+    <string name="type_parasite">Parasite</string>
+    <string name="type_human_with_antennae">Human with antennae</string>
+    <string name="type_human_with_ants_in_eyes">Human with ants in his eyes</string>
+
+    <!-- Character Genders -->
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_unknown">Unknown</string>
+
+    <!-- Character Origins -->
+    <string name="earth_c137">Earth (C-137)</string>
+    <string name="unknown">Unknown</string>
+    <string name="earth_replacement_dimension">Earth (Replacement Dimension)</string>
+    <string name="abadango">Abadango</string>
+    <string name="testicle_monster_dimension">Testicle Monster Dimension</string>
+    <string name="anatomy_park">Anatomy Park</string>
+    <string name="interdimensional_cable">Interdimensional Cable</string>
+    <string name="replacement_dimension">Earth (Replacement Dimension)</string>
+    <string name="worldenders_lair">Worldenders lair</string>
+    <string name="citadel_of_ricks">Citadel of Ricks</string>
+
 </resources>
