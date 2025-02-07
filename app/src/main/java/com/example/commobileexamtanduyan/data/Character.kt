@@ -1,7 +1,9 @@
 package com.example.commobileexamtanduyan.data
 
+import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import com.example.commobileexamtanduyan.R
+import com.example.commobileexamtanduyan.R.drawable
 
 //data class ApiResponse(
 //    val info: Info,
@@ -22,7 +24,7 @@ data class Character(
     @StringRes val gender: Int,
     val origin: Origin,
     val location: Location,
-    val image: String,
+    @DrawableRes val image: Int,
     val episode: List<String>,
     val url: String,
     val created: String
@@ -46,7 +48,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.earth_c137, url = "https://rickandmortyapi.com/api/location/1"),
         location = Location(name = R.string.earth_c137, url = "https://rickandmortyapi.com/api/location/3"),
-        image = "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+        image = R.drawable.one,
         episode = listOf("https://rickandmortyapi.com/api/episode/1"),
         url = "https://rickandmortyapi.com/api/character/1",
         created = "2017-11-04T18:48:46.250Z"
@@ -60,7 +62,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.unknown, url = ""),
         location = Location(name = R.string.replacement_dimension, url = "https://rickandmortyapi.com/api/location/3"),
-        image = "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+        image = R.drawable.two,
         episode = listOf("https://rickandmortyapi.com/api/episode/1"),
         url = "https://rickandmortyapi.com/api/character/2",
         created = "2017-11-04T18:50:21.651Z"
@@ -74,7 +76,7 @@ val characters = listOf(
         gender = R.string.gender_female,
         origin = Origin(name = R.string.replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
         location = Location(name = R.string.replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
-        image = "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
+        image = R.drawable.three,
         episode = listOf("https://rickandmortyapi.com/api/episode/6"),
         url = "https://rickandmortyapi.com/api/character/3",
         created = "2017-11-04T19:09:56.428Z"
@@ -88,7 +90,7 @@ val characters = listOf(
         gender = R.string.gender_female,
         origin = Origin(name = R.string.earth_replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
         location = Location(name = R.string.earth_replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
-        image = "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
+        image =R.drawable.four,
         episode = listOf("https://rickandmortyapi.com/api/episode/6"),
         url = "https://rickandmortyapi.com/api/character/4",
         created = "2017-11-04T19:22:43.665Z"
@@ -102,7 +104,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.earth_replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
         location = Location(name = R.string.earth_replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
-        image = "https://rickandmortyapi.com/api/character/avatar/5.jpeg",
+        image = R.drawable.five,
         episode = listOf("https://rickandmortyapi.com/api/episode/6"),
         url = "https://rickandmortyapi.com/api/character/5",
         created = "2017-11-04T19:26:56.301Z"
@@ -116,7 +118,7 @@ val characters = listOf(
         gender = R.string.gender_female,
         origin = Origin(name = R.string.abadango, url = "https://rickandmortyapi.com/api/location/2"),
         location = Location(name = R.string.abadango, url = "https://rickandmortyapi.com/api/location/2"),
-        image = "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
+        image = R.drawable.six,
         episode = listOf("https://rickandmortyapi.com/api/episode/27"),
         url = "https://rickandmortyapi.com/api/character/6",
         created = "2017-11-04T19:50:28.250Z"
@@ -130,7 +132,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.earth_replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
         location = Location(name = R.string.testicle_monster_dimension, url = "https://rickandmortyapi.com/api/location/21"),
-        image = "https://rickandmortyapi.com/api/character/avatar/7.jpeg",
+        image = R.drawable.seven,
         episode = listOf("https://rickandmortyapi.com/api/episode/10"),
         url = "https://rickandmortyapi.com/api/character/7",
         created = "2017-11-04T19:59:20.523Z"
@@ -144,7 +146,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.unknown, url = ""),
         location = Location(name = R.string.citadel_of_ricks, url = "https://rickandmortyapi.com/api/location/3"),
-        image = "https://rickandmortyapi.com/api/character/avatar/8.jpeg",
+        image = R.drawable.eight,
         episode = listOf("https://rickandmortyapi.com/api/episode/28"),
         url = "https://rickandmortyapi.com/api/character/8",
         created = "2017-11-04T20:03:34.737Z"
@@ -158,7 +160,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.earth_replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
         location = Location(name = R.string.earth_replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
-        image = "https://rickandmortyapi.com/api/character/avatar/9.jpeg",
+        image = R.drawable.nine,
         episode = listOf("https://rickandmortyapi.com/api/episode/24"),
         url = "https://rickandmortyapi.com/api/character/9",
         created = "2017-11-04T20:06:54.976Z"
@@ -172,7 +174,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.unknown, url = ""),
         location = Location(name = R.string.worldenders_lair, url = "https://rickandmortyapi.com/api/location/4"),
-        image = "https://rickandmortyapi.com/api/character/avatar/10.jpeg",
+        image = R.drawable.ten,
         episode = listOf("https://rickandmortyapi.com/api/episode/25"),
         url = "https://rickandmortyapi.com/api/character/10",
         created = "2017-11-04T20:19:09.017Z"
@@ -186,7 +188,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.earth_c137, url = "https://rickandmortyapi.com/api/location/1"),
         location = Location(name = R.string.earth_replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
-        image = "https://rickandmortyapi.com/api/character/avatar/11.jpeg",
+        image = R.drawable.eleven,
         episode = listOf("https://rickandmortyapi.com/api/episode/12"),
         url = "https://rickandmortyapi.com/api/character/11",
         created = "2017-11-04T20:20:20.965Z"
@@ -200,7 +202,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.earth_c137, url = "https://rickandmortyapi.com/api/location/1"),
         location = Location(name = R.string.anatomy_park, url = "https://rickandmortyapi.com/api/location/5"),
-        image = "https://rickandmortyapi.com/api/character/avatar/12.jpeg",
+        image = R.drawable.twenty,
         episode = listOf("https://rickandmortyapi.com/api/episode/3"),
         url = "https://rickandmortyapi.com/api/character/12",
         created = "2017-11-04T20:32:33.144Z"
@@ -214,7 +216,7 @@ val characters = listOf(
         gender = R.string.gender_unknown,
         origin = Origin(name = R.string.unknown, url = ""),
         location = Location(name = R.string.earth_replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
-        image = "https://rickandmortyapi.com/api/character/avatar/13.jpeg",
+        image = R.drawable.thirteen,
         episode = listOf("https://rickandmortyapi.com/api/episode/31"),
         url = "https://rickandmortyapi.com/api/character/13",
         created = "2017-11-04T20:33:30.779Z"
@@ -228,7 +230,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.unknown, url = ""),
         location = Location(name = R.string.citadel_of_ricks, url = "https://rickandmortyapi.com/api/location/3"),
-        image = "https://rickandmortyapi.com/api/character/avatar/14.jpeg",
+        image = R.drawable.fourteen,
         episode = listOf("https://rickandmortyapi.com/api/episode/10"),
         url = "https://rickandmortyapi.com/api/character/14",
         created = "2017-11-04T20:51:31.373Z"
@@ -242,7 +244,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.unknown, url = ""),
         location = Location(name = R.string.citadel_of_ricks, url = "https://rickandmortyapi.com/api/location/3"),
-        image = "https://rickandmortyapi.com/api/character/avatar/15.jpeg",
+        image =  R.drawable.fifteen,
         episode = listOf("https://rickandmortyapi.com/api/episode/10"),
         url = "https://rickandmortyapi.com/api/character/15",
         created = "2017-11-04T20:56:13.215Z"
@@ -256,7 +258,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.unknown, url = ""),
         location = Location(name = R.string.earth_replacement_dimension, url = "https://rickandmortyapi.com/api/location/20"),
-        image = "https://rickandmortyapi.com/api/character/avatar/16.jpeg",
+        image =  R.drawable.sixteen,
         episode = listOf("https://rickandmortyapi.com/api/episode/15"),
         url = "https://rickandmortyapi.com/api/character/16",
         created = "2017-11-04T21:12:45.235Z"
@@ -270,7 +272,7 @@ val characters = listOf(
         gender = R.string.gender_female,
         origin = Origin(name = R.string.earth_c137, url = "https://rickandmortyapi.com/api/location/1"),
         location = Location(name = R.string.anatomy_park, url = "https://rickandmortyapi.com/api/location/5"),
-        image = "https://rickandmortyapi.com/api/character/avatar/17.jpeg",
+        image =  R.drawable.seventeen,
         episode = listOf("https://rickandmortyapi.com/api/episode/3"),
         url = "https://rickandmortyapi.com/api/character/17",
         created = "2017-11-04T22:21:24.481Z"
@@ -284,7 +286,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.unknown, url = ""),
         location = Location(name = R.string.citadel_of_ricks, url = "https://rickandmortyapi.com/api/location/3"),
-        image = "https://rickandmortyapi.com/api/character/avatar/18.jpeg",
+        image =  R.drawable.eighteen,
         episode = listOf("https://rickandmortyapi.com/api/episode/10"),
         url = "https://rickandmortyapi.com/api/character/18",
         created = "2017-11-04T22:25:29.008Z"
@@ -298,7 +300,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.unknown, url = ""),
         location = Location(name = R.string.unknown, url = ""),
-        image = "https://rickandmortyapi.com/api/character/avatar/19.jpeg",
+        image =  R.drawable.nineteen,
         episode = listOf("https://rickandmortyapi.com/api/episode/10"),
         url = "https://rickandmortyapi.com/api/character/19",
         created = "2017-11-04T22:28:13.756Z"
@@ -312,7 +314,7 @@ val characters = listOf(
         gender = R.string.gender_male,
         origin = Origin(name = R.string.unknown, url = ""),
         location = Location(name = R.string.interdimensional_cable, url = "https://rickandmortyapi.com/api/location/6"),
-        image = "https://rickandmortyapi.com/api/character/avatar/20.jpeg",
+        image =  R.drawable.twenty,
         episode = listOf("https://rickandmortyapi.com/api/episode/8"),
         url = "https://rickandmortyapi.com/api/character/20",
         created = "2017-11-04T22:34:53.659Z"
