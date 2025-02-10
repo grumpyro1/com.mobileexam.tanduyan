@@ -40,9 +40,7 @@ import com.example.commobileexamtanduyan.data.characters
 fun AppScreen(){
 
     Scaffold(
-        topBar ={
-            CenterAlignedTopAppBar(title = { Text("Rick and Morty")})
-        }
+        topBar ={CenterAlignedTopAppBar(title = { Text("Rick and Morty")})}
     ) { it ->
         LazyColumn (contentPadding = it){
             items(characters){CharacterItem(character = it)}
