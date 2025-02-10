@@ -95,7 +95,7 @@ fun CharacterInfo (character: Character){
 fun MoreDetails(character: Character){
 
     Column (modifier = Modifier.padding(20.dp)){
-        Text(text = stringResource(id = character.gender),style =  MaterialTheme.typography.bodyMedium) // changed here
+        Text(text = stringResource(id = character.gender),style =  MaterialTheme.typography.bodyMedium) // changed heres
         Text(text = stringResource(id = character.origin.name),style =  MaterialTheme.typography.bodyMedium)
         Text(text = stringResource(id = character.location.name),style =  MaterialTheme.typography.bodyMedium)
     }
