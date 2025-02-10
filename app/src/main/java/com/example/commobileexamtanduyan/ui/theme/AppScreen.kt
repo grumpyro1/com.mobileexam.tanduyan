@@ -87,7 +87,7 @@ fun CharacterInfo (character: Character){
             Text(text = stringResource(id = character.name),style =  MaterialTheme.typography.bodyLarge)
             Text(text = stringResource(id = character.status),style =  MaterialTheme.typography.bodyMedium)
             Text(text = stringResource(id = character.species),style =  MaterialTheme.typography.bodyMedium)
-            Text(text = stringResource(id = character.type),style =  MaterialTheme.typography.bodyMedium)
+            Text(text = stringResource(id = character.type),style =  MaterialTheme.typography.bodyMedium) // changed here
         }
     }
 }
