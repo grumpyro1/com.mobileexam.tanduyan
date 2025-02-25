@@ -65,7 +65,9 @@ fun CharacterCard(
         CharacterInfo(character)
 
         Column(
-            modifier = Modifier.animateContentSize(animationSpec = tween(durationMillis = 500,easing = LinearOutSlowInEasing))
+            modifier = Modifier.animateContentSize(
+                animationSpec = tween(durationMillis = 500,easing = LinearOutSlowInEasing)
+            )
         ) {
             Text(
                 text = if(isClick) stringResource(R.string.less_details) else stringResource(R.string.more_details),                style = MaterialTheme.typography.bodySmall,
