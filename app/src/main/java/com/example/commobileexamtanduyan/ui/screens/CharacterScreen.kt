@@ -103,11 +103,12 @@ fun CharacterInfo (character: Character){
 }
 @Composable
 fun MoreDetails(character: Character) {
+
     Column(modifier = Modifier.padding(20.dp)) {
         Text(text = "Name: ${character.name}", style = MaterialTheme.typography.bodyMedium)
         Text(text = "Status: ${character.status}", style = MaterialTheme.typography.bodyMedium)
         Text(text = "Species: ${character.species}", style = MaterialTheme.typography.bodyMedium)
-        Text(text = "Type: ${character.type}", style = MaterialTheme.typography.bodyMedium)
+        Text(text = if (character.type.isEmpty()) "Type: None" else "Type: ${character.type}",style = MaterialTheme.typography.bodyMedium)
         Text(text = "Gender: ${character.gender}", style = MaterialTheme.typography.bodyMedium)
     }
 }
@@ -126,7 +127,7 @@ fun CharacterDetails(character: Character) {
         Text(text = "Name: ${character.name}", style = MaterialTheme.typography.bodyLarge)
         Text(text = "Status: ${character.status}", style = MaterialTheme.typography.bodyMedium)
         Text(text = "Species: ${character.species}", style = MaterialTheme.typography.bodyMedium)
-        Text(text = "Type: ${character.type}", style = MaterialTheme.typography.bodyMedium)
+        Text(text = if (character.type.isEmpty()) "Type: None" else "Type: ${character.type}",style = MaterialTheme.typography.bodyMedium)
         Text(text = "Gender: ${character.gender}", style = MaterialTheme.typography.bodyMedium)
     }
 }

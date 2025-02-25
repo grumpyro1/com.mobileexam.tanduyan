@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">com.mobileexam.tanduyan</string>
+    <string name="app_name">MB2_Tanduyan</string>
     <string name="placeholder_result">Placeholder result text</string>
     <string name="loading">Loading</string>
     <string name="loading_failed">Failed to load</string>
