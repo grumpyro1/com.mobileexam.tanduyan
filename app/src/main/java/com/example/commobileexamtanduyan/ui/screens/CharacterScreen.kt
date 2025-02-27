@@ -103,7 +103,6 @@ fun CharacterInfo (character: Character){
 }
 @Composable
 fun MoreDetails(character: Character) {
-
     Column(modifier = Modifier.padding(20.dp)) {
         Text(text = "Name: ${character.name}", style = MaterialTheme.typography.bodyMedium)
         Text(text = "Status: ${character.status}", style = MaterialTheme.typography.bodyMedium)
