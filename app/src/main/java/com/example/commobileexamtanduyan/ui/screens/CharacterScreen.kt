@@ -128,5 +128,6 @@ fun CharacterDetails(character: Character) {
         Text(text = "Species: ${character.species}", style = MaterialTheme.typography.bodyMedium)
         Text(text = if (character.type.isEmpty()) "Type: None" else "Type: ${character.type}",style = MaterialTheme.typography.bodyMedium)
         Text(text = "Gender: ${character.gender}", style = MaterialTheme.typography.bodyMedium)
+//        TEST
     }
 }
